@@ -1,0 +1,53 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import { metaGlobal } from "../data/variables";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset={metaGlobal.charset} />
+    <meta name="viewport" content={metaGlobal.viewport} />
+    <meta name="description" content={metaGlobal.description} />
+    <meta name="keywords" content={metaGlobal.keywords} />
+    <meta name="author" content={metaGlobal.author} />
+    <meta name="robots" content={metaGlobal.robots} />
+    <meta property="og:title" content={metaGlobal.ogTitle} />
+    <meta property="og:description" content={metaGlobal.ogDescription} />
+    <meta property="og:image" content={metaGlobal.ogImage} />
+    <meta property="og:url" content={metaGlobal.ogUrl} />
+    <meta property="og:type" content={metaGlobal.ogType} />
+    <meta property="og:site_name" content={metaGlobal.ogSiteName} />
+    <meta property="og:locale" content={metaGlobal.ogLocale} />
+    <title>{title}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"
+    ></script>
+    <script src="/src/js/getColorTheme.ts"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+    />
+  </head>
+  <body>
+    <div
+      class="h-screen my-0 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 grid grid-rows-layout"
+    >
+      <Header />
+      <div><slot /></div>
+      <Footer />
+    </div>
+  </body>
+</html>

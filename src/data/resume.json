@@ -1,0 +1,38 @@
+{
+"scenic": [
+	{
+	"show": "To Kill a Mockingbird",
+	"location": "The Old Globe",
+	"director": "Adrian Noble",
+	"year": "2018"
+	}
+],
+
+"projection": [
+	{
+		"show": "the tempest",
+		"location": "la jolla playhouse",
+		"director": "tina landau",
+		"year": "2019"
+		}
+],
+
+"technical": [
+	{
+		"show": "a christmas carol",
+		"location": "texas shakespeare festival",
+		"director": "michael fry",
+		"year": "2020"
+		}
+],
+
+"stage": [
+	{
+		"show": "blood wedding",
+		"location": "ny repertory theatre",
+		"director": "joseph papp",
+		"year": "2021"
+		}
+]
+
+}

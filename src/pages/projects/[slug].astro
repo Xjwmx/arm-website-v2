@@ -1,0 +1,40 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, Image } from "astro:content";
+import Main from "../../layouts/Main.astro";
+
+
+
+export async function getStaticPaths() {
+  const projectEntries = await getCollection("projects");
+  return projectEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const imageFiles = await Astro.glob(entry.data.path);
+---
+
+<Main title={entry.data.title}>
+  <h1>{entry.data.title}</h1>
+  
+  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-3 mb-5 mx-auto w-full px-4">
+    {
+      imageFiles.map((img) => (
+        <Image
+          src={img.default}
+          width="600"
+          alt="Photo of a pizza"
+          class="mb-3 w-full rounded"
+        />
+      ))
+    }
+  </div>
+
+
+
+  <Content />
+</Main>

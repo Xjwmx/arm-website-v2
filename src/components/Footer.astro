@@ -1,0 +1,17 @@
+---
+import { metaGlobal } from "../data/variables";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="py-4">
+  <div class="sm:flex sm:items-center sm:justify-between">
+    <div class="flex justify-center sm:justify-start">
+      <h1>{metaGlobal.title}</h1>
+    </div>
+
+    <p class="text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
+      Copyright &copy; {year}. All rights reserved.
+    </p>
+  </div>
+</footer>

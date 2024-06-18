@@ -1,0 +1,99 @@
+---
+import Main from "../layouts/Main.astro";
+import data from "../data/resume.json"
+
+interface resumeItem {
+  show: string;
+  location: string;
+  director: string;
+  year: string;
+}
+---
+
+<Main title="resume">
+<h2 class="text-center my-4 font-bold">Resume</h2>
+<p class="p-4 w-2/3 text-wrap m-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi repudiandae quidem sapiente ullam, enim odio numquam nihil temporibus accusantium eos consequatur animi aspernatur similique alias quo amet provident officia omnis eum quos cum? Exercitationem maiores dolores facilis doloremque aperiam quos sit quo perferendis nam repellat a, quas veniam officiis et impedit quidem repellendus quam obcaecati nesciunt adipisci fuga cum?</p>
+<h3 class="text-left bg-slate-200 p-4 my-4 font-bold mt-12s">Scenic Design Work</h3>
+<div class="overflow-x-auto">
+  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+    <thead class="text-left">
+      <tr>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Show</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Location</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Director</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Year</th>
+      </tr>
+    </thead>
+
+    <tbody class="divide-y divide-gray-200">
+      
+      {data.scenic.map((item: resumeItem) => (
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{item.show}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.location}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.director}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.year}</td>
+      </tr>
+      ))}
+
+    </tbody>
+  </table>
+</div>
+
+<h3 class="text-left bg-slate-200 p-4 my-4 font-bold mt-12">Projection Design</h3>
+<div class="overflow-x-auto">
+  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+    <thead class="text-left">
+      <tr>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Show</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Location</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Director</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Year</th>
+      </tr>
+    </thead>
+
+    <tbody class="divide-y divide-gray-200">
+      
+      {data.scenic.map((item: resumeItem) => (
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{item.show}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.location}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.director}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.year}</td>
+      </tr>
+      ))}
+
+    </tbody>
+  </table>
+</div>
+
+<h3 class="text-left bg-slate-200 p-4 my-4 font-bold mt-12">Technical Direction</h3>
+<div class="overflow-x-auto">
+  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+    <thead class="text-left">
+      <tr>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Show</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Location</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Director</th>
+        <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Year</th>
+      </tr>
+    </thead>
+
+    <tbody class="divide-y divide-gray-200">
+      
+      {data.scenic.map((item: resumeItem) => (
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{item.show}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.location}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.director}</td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">{item.year}</td>
+      </tr>
+      ))}
+
+    </tbody>
+  </table>
+</div>
+  
+</Main>
+
+
