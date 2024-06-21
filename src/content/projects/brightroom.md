@@ -8,7 +8,7 @@ role: "Scenic Design"
 year: 1845
 info: "lorem ipsum"
 description: "lorem ipsum dolor sit amet."
-# credits
+credits:
 writer: "Tony Kusher"
 director: "Lilly Wolff"
 technical_director: "Justin Smith"
@@ -22,13 +22,11 @@ props_designer: "some props designer"
 producer: "some producer"
 production_company: "some production company"
 location: "Thomas Jones Theater, Southwestern University, Georgetown, Tx"
-# media
-gallery_images: []
+media:
+path: ""
 thumbnail: "https://picsum.photos/400/600"
 thumbnail_alt: "some alt text"
 thumbnail_caption: "some caption"
 ---
 
 <!-- Additional content goes here as MarkDown -->
-
-# Post
