@@ -1,38 +1,128 @@
 {
-"scenic": [
-	{
-	"show": "To Kill a Mockingbird",
-	"location": "The Old Globe",
-	"director": "Adrian Noble",
-	"year": "2018"
-	}
-],
-
-"projection": [
-	{
-		"show": "the tempest",
-		"location": "la jolla playhouse",
-		"director": "tina landau",
-		"year": "2019"
-		}
-],
-
-"technical": [
-	{
-		"show": "a christmas carol",
-		"location": "texas shakespeare festival",
-		"director": "michael fry",
+	"scenic": [
+		{
+		"show": "The Rocky Horror Show",
+		"location": "Santa Rosa Junior College",
+		"director": "Justin Smith",
+		"year": "2024"
+		},
+		{
+		"show": "The Revolutionists",
+		"location": "Nebraska Weslyan University",
+		"director": "Leigh Walter",
+		"year": "2024"
+		},
+		{
+		"show": "Romeo and Juliet",
+		"location": "Nebraska Weslyan University",
+		"director": "Anne McAlexander",
+		"year": "2024"
+		},
+		{
+		"show": "A Christmas Carol",
+		"location": "Santa Rosa Junior College",
+		"director": "James Newman",
+		"year": "2023"
+		},
+		{
+		"show": "Clue",
+		"location": "Santa Rosa Junior College",
+		"director": "Reed Martin",
+		"year": "2023"
+		},
+		{
+		"show": "Junie B. Jones Jr.",
+		"location": "Stage Dreams Youth Theatre",
+		"director": "Meija Eller",
 		"year": "2020"
+		},
+		{
+		"show": "Next to Normal",
+		"location": "French Woods Festival",
+		"director": "Ron Schaefer",
+		"year": "2019"
+		},
+		{
+		"show": "The Adams Family",
+		"location": "French Woods Festival",
+		"director": "Fred Stuart",
+		"year": "2019"
+		},
+		{
+		"show": "If/Then",
+		"location": "French Woods Festival",
+		"director": "LaVonne Canfield",
+		"year": "2019"
+		},
+		{
+		"show": "Something Rotten",
+		"location": "French Woods Festival",
+		"director": "Ron Schaefer",
+		"year": "2019"
+		},
+		{
+		"show": "Matilda",
+		"location": "French Woods Festival",
+		"director": "Beth Schaefer",
+		"year": "2019"
+		},
+		{
+		"show": "A Bright Room Called Day",
+		"location": "Southwestern University",
+		"director": "Lily Wolff",
+		"year": "2018"
+		},
+		{
+		"show": "You're a Good Man, Charlie Brown",
+		"location": "Southwestern University",
+		"director": "Brain Fahey",
+		"year": "2016"
 		}
-],
-
-"stage": [
-	{
-		"show": "blood wedding",
-		"location": "ny repertory theatre",
-		"director": "joseph papp",
-		"year": "2021"
+	],
+	
+	"projection": [
+		{
+		"show": "Footloose",
+		"location": "Georgetown Palace Theatre Education",
+		"director": "Jonathan Young",
+		"year": "2019"
+		},
+		{
+		"show": "Mad Libs Live!",
+		"location": "Georgetown Palace Theatre Education",
+		"director": "Jonathan Young",
+		"year": "2019"
+		},
+		{
+		"show": "A Bright Room Called Day",
+		"location": "Southwestern University",
+		"director": "Lily Wolff",
+		"year": "2018"
+		},
+		{
+		"show": "You're a Good Man, Charlie Brown",
+		"location": "Southwestern University",
+		"director": "Brain Fahey",
+		"year": "2016"
 		}
-]
-
-}
+	],
+	
+	"technical": [
+		{
+			"show": "a christmas carol",
+			"location": "texas shakespeare festival",
+			"director": "michael fry",
+			"year": "2020"
+			}
+	],
+	
+	"stage": [
+		{
+			"show": "blood wedding",
+			"location": "ny repertory theatre",
+			"director": "joseph papp",
+			"year": "2021"
+			}
+	]
+	
+	}

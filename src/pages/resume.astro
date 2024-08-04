@@ -11,8 +11,8 @@ interface resumeItem {
 ---
 
 <Main title="resume">
-  <h2 class="text-center my-4 font-bold">Resume</h2>
-  <p class="p-4 w-2/3 text-wrap m-auto">
+  <h2 class="my-4 font-bold">Resume</h2>
+  <p class="text-wrap">
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
     repudiandae quidem sapiente ullam, enim odio numquam nihil temporibus
     accusantium eos consequatur animi aspernatur similique alias quo amet
@@ -21,90 +21,27 @@ interface resumeItem {
     officiis et impedit quidem repellendus quam obcaecati nesciunt adipisci fuga
     cum?
   </p>
-  <h3 class="text-left p-4 my-4 font-bold mt-12s">Scenic Design Work</h3>
-  <div class="overflow-x-auto">
-    <table class="min-w-full divide-y-2 divide text-sm">
-      <thead class="text-left">
-        <tr>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Show</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Location</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Director</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Year</th>
-        </tr>
-      </thead>
-
-      <tbody class="divide-y divide">
+  <div class="resume__content">
+    <h3 class="my-4 font-black">Scenic Design</h3>
+    <div class="resume__headers flex no-wrap">
+      <h4 class="font-bold">Show</h4>
+      <h4 class="font-bold">Location</h4>
+      <h4 class="font-bold">Director</h4>
+      <h4 class="font-bold">Year</h4>
+    </div>
+    <div class="resume__section">
+      <ul>
         {
           data.scenic.map((item: resumeItem) => (
-            <tr>
-              <td class="whitespace-nowrap px-4 py-2 font-medium">
-                {item.show}
-              </td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.location}</td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.director}</td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.year}</td>
-            </tr>
+            <li class="flex no-wrap">
+              <p class="my-1 font-semibold">{item.show}</p>
+              <p class="my-1">{item.location}</p>
+              <p class="my-1">{item.director}</p>
+              <p class="my-1">{item.year}</p>
+            </li>
           ))
         }
-      </tbody>
-    </table>
-  </div>
-
-  <h3 class="text-left bg- p-4 my-4 font-bold mt-12">Projection Design</h3>
-  <div class="overflow-x-auto">
-    <table class="min-w-full divide-y-2 divide text-sm">
-      <thead class="text-left">
-        <tr>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Show</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Location</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Director</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Year</th>
-        </tr>
-      </thead>
-
-      <tbody class="divide-y divide">
-        {
-          data.scenic.map((item: resumeItem) => (
-            <tr>
-              <td class="whitespace-nowrap px-4 py-2 font-medium">
-                {item.show}
-              </td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.location}</td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.director}</td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.year}</td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
-  </div>
-
-  <h3 class="text-left bg- p-4 my-4 font-bold mt-12">Technical Direction</h3>
-  <div class="overflow-x-auto">
-    <table class="min-w-full divide-y-2 divide text-sm">
-      <thead class="text-left">
-        <tr>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Show</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Location</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Director</th>
-          <th class="whitespace-nowrap px-4 py-2 font-medium">Year</th>
-        </tr>
-      </thead>
-
-      <tbody class="divide-y divide">
-        {
-          data.scenic.map((item: resumeItem) => (
-            <tr>
-              <td class="whitespace-nowrap px-4 py-2 font-medium">
-                {item.show}
-              </td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.location}</td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.director}</td>
-              <td class="whitespace-nowrap px-4 py-2 text">{item.year}</td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
+      </ul>
+    </div>
   </div>
 </Main>
